@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/text.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/success.css">
+    <script src="app.js"></script>
+    <title>Simma Lugnt - form</title>
+</head>
+<body id="body">
+    <main id="main">
+        <div id="text-wrapper" class="text-wrapper">
+            <h1>
+                Lorem impsum dolor sit amet,
+            </h1>
+            <p>
+                Duis scelerisque, risus non tempor sodales, risus augue ullamcorper orci, nec lacinia nibhh felis in nisi. Vivamus dapibus sapien a feugiat bidendum. Nam vel turpis luctus, suscipit nisl et, eleifend quam. 
+            </p>
+        </div>
+        <div id="form-wrapper" class="form-wrapper">
+            <div class="form">
+                <input id="text-input" class="text-input" value="Your email here" type="text">
+                <p class="error-msg" id="error-msg">Error, check your email</p>
+                <button onclick="postData()" class="form-btn" type="submit">Submit</button>
+            </div>
+        </div>
+        <div id="success-wrapper" class="success-wrapper">
+            <lottie-player id="success-animation" src="./animations/satellite.json" background="transparent"  speed="1"  style="width: 50vw; height: 50vh;" loop autoplay></lottie-player>
+            <p id="success-text">Success, all done!</p>
+        </div>
+    </main>
+</body>
+</html>
