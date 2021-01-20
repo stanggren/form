@@ -1,78 +1,109 @@
 .form-wrapper{
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
     align-self: flex-end;
-    padding-bottom: 1.2rem;
-    padding-left: 5rem;
+
+    width: 100%;
+    max-width: 35rem;
 }
 
 .form-wrapper .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .text-input{
     font-family: 'Roboto Mono', monospace;
+    font-size: 1.2rem;
+    font-weight: 400;
+
     outline: none;
     background: none;
     border: none;
     border-bottom: 2px solid var(--primary-border-color);
     color: var(--primary-text-color);
-    margin-bottom: 1rem;
-    padding-bottom: 0.8rem;
-    width: 30rem;
-    font-size: 1rem;
+
+    padding-bottom: 0.7rem;
+    width: 100%;
+    max-width: 28rem;
+
+}
+
+.lower-form-container{
+    height: 10rem;
+    align-self: flex-start;
+    padding-left: 3.5rem;
+    max-width: 28rem;
 }
 
 .form-btn{
-    width: 10rem;
-    padding: 1rem;
+    width: 14rem;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+
+
     background: var(--secondary-bg-color);
-    border-radius: 0.2rem;
-    font-size: 1rem;
+    border: none;
+    border-radius: 0.1rem;
+    font-size: 1.2rem;
 }
 
 .error-msg{
     display: none;
+    padding-top: 0.2rem;
+    margin-block-end: 0.3rem;
+
     color: var(--error-text-color);
-    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1245px) {
     .form-wrapper{
-        align-self:auto;
-        padding-top: 10rem;
+        padding-top: 4rem;
+    }
+    .text-input{
+        font-size: 1rem;
+        font-weight: 300;
+        width: none;
+
+    }
+    .lower-form-container{
+        height: 10rem;
+        align-self: center;
         padding-left: 0rem;
+        width: 50%;
     }
-    .text-input{
-        width: 35rem;
-    }
-
     .form-btn{
-        width: 35.3rem;
+        font-size: 1rem;
+        width: 100%;
+        margin-top: 1.5rem;
+        border: none;
+    }
+    .error-msg{
+        display: none;
+        padding-top: 0rem;
+        margin-block-end: 0rem;
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width: 700px) {
-    .text-input{
-        width: 30rem;
-    }
-
-    .form-btn{
-        width: 30.3rem;
+@media screen and (max-width: 600px){
+    .lower-form-container{
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 376px){
     .text-input{
-        width: 20rem;
-    }
-
-    .form-btn{
-        width: 20rem;
+        max-width: 21.2rem;
     }
 }

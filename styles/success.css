@@ -1,12 +1,14 @@
 .success-wrapper{
     display: none;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    left: 60%;
+    top: 40%;
 }
 
 #success-text {
     color: black;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .display-success-wrapper{
@@ -17,25 +19,27 @@
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
-    .success-wrapper{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .animation svg{
-        width: 100px;
-        height: 100px;
-    }
+.animation-wrapper{
+    position: fixed;
+    right: 40%;
+    top: 10%;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
     #success-text{
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-weight: 600;
     }
 
-    .animation svg{
-        width: 50px;
-        height: 50px;
+    .animation-wrapper{
+        position: fixed;
+        right: 40%;
+        top: 5%;
+    }
+
+    .success-wrapper{
+        width: 10rem;
+        left: 5%;
+        top: 50%;
     }
 }
